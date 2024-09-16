@@ -43,6 +43,7 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
         p0.binding.apply {
             val post = posts[p1]
+            albumId.text = post.id.toString()
             albumTitle.text = post.title
             userId.text = post.userId.toString()
         }

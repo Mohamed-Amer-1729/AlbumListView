@@ -11,10 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.internetrecyler.api.RetrofitInstance
 import com.example.internetrecyler.data.Post
 import com.example.internetrecyler.databinding.FragmentMainBinding
-import kotlinx.coroutines.launch
-import okio.IOException
 import retrofit2.HttpException
 import retrofit2.Response
+import java.io.IOException
 
 class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
